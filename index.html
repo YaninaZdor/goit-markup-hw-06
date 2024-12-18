@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,15 +37,91 @@
         <address class="address">
           <ul class="header-address">
             <li class="header-address-contact">
-              <a class="" href="mailto:info@devstudio.com"
+              <a class="header-address-contact" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="header-address-contact">
-              <a class="" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              <a class="header-address-contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
+        <button class="menu-button-open" type="button">
+          <svg class="menu-button-open-icon" width="32" height="22">
+            <use href="./images/button_menu.svg#icon-button_menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-container is-hidden">
+          <div class="mobile-menu-wrapper">
+            <button class="mobile-menu-close" type="button">
+              <svg class="mobile-menu-close-icon" width="8" height="8">
+                <use href="./images/close-button.svg#icon-close-button"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-nav" href="#">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-nav" href="#">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-nav" href="#">Contacts</a>
+              </li>
+            </ul>
+            <address class="mobile-menu-contacts">
+              <ul class="mobile-menu-contacts-list">
+                <li class="mobile-menu-contacts-item">
+                  <a class="mobile-menu-contacts-tel" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu-contacts-item">
+                  <a
+                    class="mobile-menu-contacts-mail"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <div class="menu-social-part">
+              <ul class="social-icons-menu">
+                <li class="menu-icon-social">
+                  <a href="" class="icon-footer">
+                    <svg width="24" height="24" class="icon">
+                      <use href="./images/icon-social.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-social">
+                  <a href="" class="icon-footer">
+                    <svg width="24" height="24" class="icon">
+                      <use href="./images/icon-social.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-social">
+                  <a href="" class="icon-footer">
+                    <svg width="24" height="24" class="icon">
+                      <use href="./images/icon-social.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-social">
+                  <a href="" class="icon-footer">
+                    <svg width="24" height="24" class="icon">
+                      <use href="./images/icon-social.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -67,8 +143,8 @@
                   <use href="./images/icons.svg#icon-strategy-icon"></use>
                 </svg>
               </div>
-              <h3 class="second-title">Strategy</h3>
-              <p class="main-text">
+              <h3 class="second-title-adv">Strategy</h3>
+              <p class="main-text-adv">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -79,8 +155,8 @@
                   <use href="./images/icons.svg#icon-clock-icon"></use>
                 </svg>
               </div>
-              <h3 class="second-title">Punctuality</h3>
-              <p class="main-text">
+              <h3 class="second-title-adv">Punctuality</h3>
+              <p class="main-text-adv">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -91,8 +167,8 @@
                   <use href="./images/icons.svg#icon-diagram-icon"></use>
                 </svg>
               </div>
-              <h3 class="second-title">Diligence</h3>
-              <p class="main-text">
+              <h3 class="second-title-adv">Diligence</h3>
+              <p class="main-text-adv">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -103,8 +179,8 @@
                   <use href="./images/icons.svg#icon-astronaut-icon"></use>
                 </svg>
               </div>
-              <h3 class="second-title">Technologies</h3>
-              <p class="main-text">
+              <h3 class="second-title-adv">Technologies</h3>
+              <p class="main-text-adv">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -118,7 +194,11 @@
           <h2 class="first-title">Our Team</h2>
           <ul class="team-cards">
             <li class="team-card">
-              <img src="./images/card-1-mark.jpg" alt="Mark Guerrero" />
+              <img
+                srcset="./images/card-1-mark@2x.jpg"
+                src="./images/card-1-mark.jpg"
+                alt="Mark Guerrero"
+              />
               <div class="social-team-icons">
                 <h3 class="second-title">Mark Guerrero</h3>
                 <p class="main-text">Product Designer</p>
@@ -163,6 +243,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/card-2-tom@2x.jpg"
                 src="./images/card-2-tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -211,6 +292,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/card-3-camila@2x.jpg"
                 src="./images/card-3-camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -259,6 +341,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/card-4-daniel@2x.jpg"
                 src="./images/card-4-daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -316,6 +399,7 @@
             <li class="portfolio-card">
               <div class="portfolio-img">
                 <img
+                  srcset="./images/banking-app@2x.jpg"
                   src="./images/banking-app.jpg"
                   alt="Banking App"
                   width="360"
@@ -335,6 +419,7 @@
             <li class="portfolio-card">
               <div class="portfolio-img">
                 <img
+                  srcset="./images/cashless@2x.jpg"
                   src="./images/cashless.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -354,6 +439,7 @@
             <li class="portfolio-card">
               <div class="portfolio-img">
                 <img
+                  srcset="./images/meditation-app@2x.jpg"
                   src="./images/meditation-app.jpg"
                   alt="Meditation App"
                   width="360"
@@ -373,6 +459,7 @@
             <li class="portfolio-card">
               <div class="portfolio-img">
                 <img
+                  srcset="./images/taxi-servies@2x.jpg"
                   src="./images/taxi-servies.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -392,6 +479,7 @@
             <li class="portfolio-card">
               <div class="portfolio-img">
                 <img
+                  srcset="./images/screen@2x.jpg"
                   src="./images/screen.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -411,6 +499,7 @@
             <li class="portfolio-card">
               <div class="portfolio-img">
                 <img
+                  srcset="./images/online-course@2x.jpg"
                   src="./images/online-course.jpg"
                   alt="Online Courses"
                   width="360"
@@ -444,7 +533,7 @@
           </p>
         </div>
         <div class="footer-social-part">
-          <p class="footer-text">Social media</p>
+          <p class="footer-text text-sub">Social media</p>
           <ul class="social-icons-footer">
             <li class="icon-social">
               <a href="" class="icon-footer">
@@ -477,7 +566,7 @@
           </ul>
         </div>
         <div class="footer-sub">
-          <p class="footer-text">Subscribe</p>
+          <p class="footer-text text-sub">Subscribe</p>
           <form action="#" class="footer-sub-form">
             <label class="input-footer-sub" for="user-email">
               <input
@@ -575,7 +664,7 @@
             <label class="form-checkbox-label" for="user-privacy">
               <span class="check">
                 <svg width="10" height="8">
-                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                  <use href="./images/icon-check.svg#icon-check"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
